@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 logger.addHandler(
     AzureLogHandler(connection_string=CONN_STR)
 )
-logger.setLevel(logging.WARNING)
+logger.setLevel(logging.INFO)
 
 # Metrics
 exporter = metrics_exporter.new_metrics_exporter(
